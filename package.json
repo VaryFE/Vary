@@ -19,6 +19,8 @@
   "devDependencies": {
     "@types/chai": "^4.1.0",
     "@types/mocha": "^5.2.4",
+    "ts-node": "^8.0.3",
+    "@types/node": "^11.13.4",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-e2e-nightwatch": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
@@ -32,9 +34,11 @@
     "chai": "^4.1.2",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "file-save": "^0.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "typescript": "^3.2.1",
+    "uppercamelcase": "^3.0.0",
     "vue-template-compiler": "^2.5.21"
   }
 }
