@@ -1,3 +1,4 @@
+/* eslint-disable */
 const navConfig = require('./nav.config');
 const langs = require('./i18n/route');
 
@@ -6,7 +7,7 @@ function load(lang, path) {
 }
 
 function loadDocs(lang, path) {
-  return r => require.ensure([], () => r(require(`./docs/${lang}/${path}.vue`)))
+  return r => require.ensure([], () => r(require(`./docs/${lang}${path}.vue`)))
 }
 
 const registerRoute = (navConfig) => {

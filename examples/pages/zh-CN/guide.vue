@@ -2,7 +2,7 @@
   <div class="page-container page-guide">
     <el-row>
       <el-col :xs="24" :sm="5">
-        <!-- <side-nav :data="navsData" :base="`/${ lang }/guide`"></side-nav> -->
+        <side-nav :data="navsData" :base="`/${ lang }/guide`"></side-nav>
       </el-col>
       <el-col :xs="24" :sm="19">
         <router-view class="content"></router-view>
@@ -16,12 +16,16 @@ import { Component, Vue } from "vue-property-decorator";
 import { Row, Col } from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 
+import SideNav from '@/components/SideNav.vue'
+
 Vue.use(Row);
 Vue.use(Col);
+
 @Component({
   components: {
     Row,
-    Col
+    Col,
+    SideNav: SideNav
   }
 })
 export default class GuidePage extends Vue {
