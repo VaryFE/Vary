@@ -14,15 +14,15 @@
       </div>
       <div class="footer-social">
         <p class="footer-social-title">Var {{ version && version.slice(0, 3) }} Fullerene</p>
-        <el-popover
+        <!-- <el-popover
           ref="weixin"
           placement="top"
           width="120"
           popper-class="footer-popover"
           trigger="hover">
           <div class="footer-popover-title">{{ langConfig.eleme }}</div>
-        </el-popover>
-        <i class="doc-icon-weixin elementdoc" v-popover:weixin></i>
+        </el-popover> -->
+        <!-- <i class="doc-icon-weixin elementdoc" v-popover:weixin></i> -->
         <a href="https://gitee.com/VarFE" target="_blank">
           <i class="doc-icon-github elementdoc"></i>
         </a>
@@ -34,12 +34,34 @@
   </footer>
 </template>
 
+<script lang='ts'>
+import { Component, Prop, Vue } from "vue-property-decorator";
+
+@Component
+export default class FooterPage extends Vue {
+    version: string = ''
+
+    get lang() {
+        return this.$route.path.split('/')[1] || 'zh-CN';
+      }
+
+      get langConfig() {
+        const compoLang = require('../i18n/component.json');
+        return compoLang.filter((config: any) => config.lang === this.lang)[0]['footer'];
+      }
+
+      get gitterLink() {
+        return this.lang === 'zh-CN' ? 'https://gitter.im/VarFE/Var' : 'https://gitter.im/var-cn/Lobby';
+      }
+  };
+</script>
+
 <style lang="scss">
   .footer {
     background-color: #F7FBFD;
     width: 100%;
     padding: 40px 150px;
-    margin-top: -340px;
+    // margin-top: -340px;
     box-sizing: border-box;
     height: 340px;
 
@@ -150,37 +172,3 @@
     }
   }
 </style>
-
-<script type="text/babel">
-  import compoLang from '../i18n/component.json';
-  import Var from 'main/index.js';
-  import Vue from 'vue';
-  import { Popover } from 'element-ui';
-  import 'element-ui/lib/theme-chalk/index.css';
-
-  Vue.use(Popover);
-
-  const { version } = Var;
-
-  export default {
-    data() {
-      return {
-        version
-      };
-    },
-
-    computed: {
-      lang() {
-        return this.$route.path.split('/')[1] || 'zh-CN';
-      },
-
-      langConfig() {
-        return compoLang.filter(config => config.lang === this.lang)[0]['footer'];
-      },
-
-      gitterLink() {
-        return this.lang === 'zh-CN' ? 'https://gitter.im/VarFE/Vary' : 'https://gitter.im/vary-cn/Lobby';
-      }
-    }
-  };
-</script>
