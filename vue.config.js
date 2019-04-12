@@ -28,6 +28,37 @@ module.exports = {
       .loader('babel-loader')
       .tap(options => {
         return options
-      })
+      });
+
+      config.module.rule('md')
+      .test(/\.md$/)
+      .include.add(/packages/).end()
+      .include.add(/examples/).end()
+      .use('vue-loader')
+        .loader('vue-loader')
+        .options({
+          compilerOptions:{
+            preserveWhitespace: false
+          }
+        })
+        .end()
+        .use('custom').loader(path.resolve(__dirname, './build/md-loader/index.js'));
   }
 }
+
+// {
+//   test: /\.md$/,
+//   use: [
+//     {
+//       loader: 'vue-loader',
+//       options: {
+//         compilerOptions: {
+//           preserveWhitespace: false
+//         }
+//       }
+//     },
+//     {
+//       loader: path.resolve(__dirname, './md-loader/index.js')
+//     }
+//   ]
+// },

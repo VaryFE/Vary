@@ -55,7 +55,7 @@
   </div>
 </template>
 <script>
-//import { Hover } from 'perspective.js';
+import { Hover } from 'perspective';
 
 export default {
   data() {
@@ -64,22 +64,22 @@ export default {
     };
   },
   mounted() {
-    new Hover(".jumbotron", {
-      // eslint-disable-line
-      max: 3,
-      scale: 1,
-      //perspective: 700,
-      layers: [
-        {
-          multiple: 0.01,
-          reverseTranslate: true
-        },
-        {
-          multiple: 0.02,
-          reverseTranslate: true
-        }
-      ]
-    });
+    // new Hover(".jumbotron", {
+    //   // eslint-disable-line
+    //   max: 3,
+    //   scale: 1,
+    //   perspective: 700,
+    //   layers: [
+    //     {
+    //       multiple: 0.01,
+    //       reverseTranslate: true
+    //     },
+    //     {
+    //       multiple: 0.02,
+    //       reverseTranslate: true
+    //     }
+    //   ]
+    // });
   }
 };
 </script>

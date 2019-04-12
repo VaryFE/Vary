@@ -7,7 +7,7 @@ function load(lang, path) {
 }
 
 function loadDocs(lang, path) {
-  return r => require.ensure([], () => r(require(`./docs/${lang}${path}.vue`)))
+  return r => require.ensure([], () => r(require(`./docs/${lang}${path}.md`)))
 }
 
 const registerRoute = (navConfig) => {
@@ -87,7 +87,7 @@ const generateMiscRoutes = function (lang) {
 
   let indexRoute = {
     path: `/${lang}`, // 首页
-    redirect: `/${lang}/component/installation`,
+    //redirect: `/${lang}/component/installation`,
     meta: { lang },
     name: 'home' + lang,
     component: load(lang, 'index')
