@@ -8,7 +8,6 @@ if (!process.argv[2]) {
   process.exit(1);
 }
 
-import fs from 'fs'
 const path = require('path');
 const fileSave = require('file-save');
 const uppercamelcase = require('uppercamelcase');
@@ -23,21 +22,17 @@ const Files = [
   {
     filename: path.join(PackagePath, 'index.ts'),
     content: `import ${ComponentName} from './src/main';
-/* istanbul ignore next */
-${ComponentName}.install = function(Vue) {
-  Vue.component(${ComponentName}.name, ${ComponentName});
-};
 export default ${ComponentName};`
   },
   {
     filename: path.join(PackagePath, 'src/main.vue'),
     content: `<template>
-  <div class="el-${componentname}"></div>
+  <div class="var-${componentname}"></div>
 </template>
 <script lang='ts'>
-export default {
-  name: 'El${ComponentName}'
-};
+import { Vue, Component } from 'vue-property-decorator'
+@Component
+export default class Row extends Vue{}
 </script>`
   },
   {
@@ -52,7 +47,7 @@ export default {
     filename: path.join(RootPath, 'tests/unit/specs', `${componentname}.spec.ts`),
     content: `import { expect } from "chai";
 import { shallowMount } from "@vue/test-utils"
-import ${ComponentName} from 'packages/${componentname}';
+// import ${ComponentName} from 'packages/${componentname}';
 
 describe('${ComponentName}', () => {
 });
@@ -89,18 +84,24 @@ Files.forEach(file => {
 // 添加到 nav.config.json
 const navConfigFile = require(path.join(RootPath, 'examples/nav.config.json'));
 
-// Object.keys(navConfigFile).forEach(lang => {
-//   let groups = navConfigFile[lang][4].groups;
-//   groups[groups.length - 1].list.push({
-//     path: `/${componentname}`,
-//     title: lang === 'zh-CN' && componentname !== chineseName
-//       ? `${ComponentName} ${chineseName}`
-//       : ComponentName
-//   });
-// });
+Object.keys(navConfigFile).forEach(lang => {
+  let groups = navConfigFile[lang][2].groups;
+  groups.forEach((e, i) => {
+    if (e.groupName === groupName) {
+      e.list.push({
+        path: `/${componentname}`,
+        title: lang === 'zh-CN' && componentname !== chineseName
+          ? `${ComponentName} ${chineseName}`
+          : ComponentName
+      });
+    }
+  });
+});
+console.log(groupName)
+console.log(navConfigFile)
 
-// fileSave(path.join(__dirname, '../../examples/nav.config.json'))
-//   .write(JSON.stringify(navConfigFile, null, '  '), 'utf8')
-//   .end('\n');
+fileSave(path.join(__dirname, '../../examples/nav.config.json'))
+  .write(JSON.stringify(navConfigFile, null, '  '), 'utf8')
+  .end('\n');
 
 console.log('DONE!');

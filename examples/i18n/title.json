@@ -1,0 +1,14 @@
+{
+  "zh-CN": {
+    "home": "Var - 网站快速成型工具",
+    "guide": "指南 | Var",
+    "component": "组件 | Var",
+    "resource": "资源 | Var"
+  },
+  "en-US": {
+    "home": "Var - A Desktop UI Toolkit for Web",
+    "guide": "Guide | Var",
+    "component": "Component | Var",
+    "resource": "Resource | Var"
+  }
+}
