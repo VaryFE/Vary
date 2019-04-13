@@ -1,22 +1,22 @@
 <template>
   <div id="app" :class="{ 'is-component': isComponentPage }">
-    <Header v-if="lang !== 'play'"></Header>
+    <main-header v-if="lang !== 'play'"></main-header>
     <div class="main-cnt">
       <router-view></router-view>
     </div>
-    <Footer v-if="lang !== 'play' && !isComponentPage"></Footer>
+    <main-footer v-if="lang !== 'play' && !isComponentPage"></main-footer>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import Header from "@/components/Header.vue"
-import Footer from "@/components/Footer.vue"
+// import Header from "@/components/Header.vue"
+// import Footer from "@/components/Footer.vue"
 
 @Component({
    components: {
-    Header,
-    Footer
+    // Header,
+    // Footer
   }
 })
 export default class App extends Vue {
