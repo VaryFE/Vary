@@ -129,7 +129,7 @@
   <div class="page-container page-resource">
     <h2><%= 1 ></h2>
     <!--<div class="resource-placeholder">-->
-      <!--<img src="@/assets/images/resource-placeholder.svg" alt="">-->
+      <!--<img src="~@/assets/images/resource-placeholder.svg" alt="">-->
       <!--<h4><%= placeholder1 ></h4>-->
       <!--<p><%= placeholder2 ></p>-->
     <!--</div>-->
@@ -139,26 +139,26 @@
       <ul class="container">
         <li>
           <div class="card">
-            <img src="@/assets/images/Axure-Components.svg" alt="">
+            <img src="~@/assets/images/Axure-Components.svg" alt="">
             <h3><%= 3 ></h3>
             <p><%= 4 ></p>
-            <a href="<%= 10>/Resources/raw/master/Var_Components_v2.0.0.rplib"><%= 5 ></a>
+            <a href="https://gitee.com/VarFE/Resources/raw/master/Var_Components_v2.0.0.rplib"><%= 5 ></a>
           </div>
         </li>
         <li>
           <div class="card">
-            <img src="@/assets/images/Sketch-Template.svg" alt="">
+            <img src="~@/assets/images/Sketch-Template.svg" alt="">
             <h3><%= 6 ></h3>
             <p><%= 7 ></p>
-            <a href="<%= 10>/Resources/raw/master/Element%20UI%20Kit_v2.0.sketch"><%= 5 ></a>
+            <a href="https://gitee.com/VarFE/Resources/raw/master/Element%20UI%20Kit_v2.0.sketch"><%= 5 ></a>
           </div>
         </li>
         <!--<li>-->
           <!--<div class="card">-->
-            <!--<img src="@/assets/images/Module.svg" alt="">-->
+            <!--<img src="~@/assets/images/Module.svg" alt="">-->
             <!--<h3><%= 8 ></h3>-->
             <!--<p><%= 9 ></p>-->
-            <!--<a href="<%= 10>/Resources/raw/master/Element%20Components%20Documentation.zip"><%= 5 ></a>-->
+            <!--<a href="https://gitee.com/VarFE/Resources/raw/master/Element%20Components%20Documentation.zip"><%= 5 ></a>-->
           <!--</div>-->
         <!--</li>-->
       </ul>

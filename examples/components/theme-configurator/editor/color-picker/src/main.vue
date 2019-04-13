@@ -17,7 +17,7 @@
       </span>
       <span class="el-color-picker__icon el-icon-arrow-down" v-show="value || showPanelColor"></span>
     </div>
-    <picker-dropdown
+    <!-- <picker-dropdown
        ref="dropdown"
        :class="['el-color-picker__panel', popperClass || '']"
        v-model="showPicker"
@@ -27,15 +27,15 @@
        :show-alpha="showAlpha"
        :predefine="predefine"
        :colorList="colorList">
-    </picker-dropdown>
+    </picker-dropdown> -->
   </div>
 </template>
 
 <script>
   import Color from './color';
   import PickerDropdown from './components/picker-dropdown.vue';
-  import Clickoutside from 'var-ui/src/utils/clickoutside';
-  import Emitter from 'var-ui/src/mixins/emitter';
+  import Clickoutside from 'main/utils/clickoutside';
+  import Emitter from 'main/mixins/emitter';
 
   export default {
     name: 'ElColorPicker',

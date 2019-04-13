@@ -279,28 +279,43 @@
     </div>
     <div class="jumbotron">
       <div>
-        <img class="jumbotron-plant-2" src="@/assets/images/plant-2.png" alt="">
-        <img class="jumbotron-web" src="@/assets/images/web.png" alt="">
-        <img class="jumbotron-plant-1" src="@/assets/images/plant-1.png" alt="">
-        <img class="jumbotron-figure-1" src="@/assets/images/figure-1.png" alt="">
-        <img class="jumbotron-figure-2" src="@/assets/images/figure-2.png" alt="">
+        <img class="jumbotron-plant-2" src="~@/assets/images/plant-2.png" alt="">
+        <img class="jumbotron-web" src="~@/assets/images/web.png" alt="">
+        <img class="jumbotron-plant-1" src="~@/assets/images/plant-1.png" alt="">
+        <img class="jumbotron-figure-1" src="~@/assets/images/figure-1.png" alt="">
+        <img class="jumbotron-figure-2" src="~@/assets/images/figure-2.png" alt="">
       </div>
       <div data-hover-layer="0">
-        <img class="jumbotron-cloud-1" src="@/assets/images/cloud-1.png" alt="">
-        <img class="jumbotron-cloud-2" src="@/assets/images/cloud-2.png" alt="">
+        <img class="jumbotron-cloud-1" src="~@/assets/images/cloud-1.png" alt="">
+        <img class="jumbotron-cloud-2" src="~@/assets/images/cloud-2.png" alt="">
       </div>
       <div data-hover-layer="1">
-        <img class="jumbotron-compo-1" src="@/assets/images/compo-1.png" alt="">
-        <img class="jumbotron-compo-2" src="@/assets/images/compo-2.png" alt="">
-        <img class="jumbotron-compo-3" src="@/assets/images/compo-3.png" alt="">
+        <img class="jumbotron-compo-1" src="~@/assets/images/compo-1.png" alt="">
+        <img class="jumbotron-compo-2" src="~@/assets/images/compo-2.png" alt="">
+        <img class="jumbotron-compo-3" src="~@/assets/images/compo-3.png" alt="">
       </div>
     </div>
-
+    <div class="sponsors">
+      <a class="sponsor" href="https://tipe.io/?ref=element" target="_blank" v-show="lang !== 'zh-CN'">
+        <img width="35px" src="~@/assets/images/tipe.svg" alt="tipe.io">
+        <div>
+          <p>Sponsored by Tipe.io</p>
+          <p>Next Generation API-first CMS</p>
+        </div>
+      </a>
+      <a class="sponsor" href="https://www.duohui.cn/?utm_source=element&utm_medium=web&utm_campaign=element-index" target="_blank">
+        <img width="45px" src="~@/assets/images/duohui.svg" alt="duohui">
+        <div>
+          <p>Sponsored by 多会</p>
+          <p>炫酷的新一代活动票务系统</p>
+        </div>
+      </a>
+    </div>
     <div class="cards">
       <ul class="container">
         <li>
           <div class="card">
-            <img src="@/assets/images/guide.png" alt="">
+            <img src="~@/assets/images/guide.png" alt="">
             <h3><%= 3 ></h3>
             <p><%= 4 ></p>
             <router-link
@@ -312,7 +327,7 @@
         </li>
         <li>
           <div class="card">
-            <img src="@/assets/images/component.png" alt="">
+            <img src="~@/assets/images/component.png" alt="">
             <h3><%= 6 ></h3>
             <p><%= 7 ></p>
             <router-link
@@ -324,7 +339,7 @@
         </li>
         <li>
           <div class="card">
-            <img src="@/assets/images/resource.png" alt="">
+            <img src="~@/assets/images/resource.png" alt="">
             <h3><%= 8 ></h3>
             <p><%= 9 ></p>
             <router-link

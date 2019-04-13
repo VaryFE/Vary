@@ -153,14 +153,14 @@
 
 <script type="text/babel">
   import compoLang from '../i18n/component.json';
-  //import Var from 'main/index.js';
+  import Var from 'main/index.js';
   import Vue from 'vue';
   import { Popover } from 'element-ui';
   import 'element-ui/lib/theme-chalk/index.css';
 
   Vue.use(Popover);
 
-  //const { version } = Var;
+  const { version } = Var;
 
   export default {
     data() {

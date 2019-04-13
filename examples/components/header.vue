@@ -1,4 +1,3 @@
-
 <style scoped lang="scss">
   .headerWrapper {
     height: 80px;
@@ -290,7 +289,7 @@
           <li class="nav-item nav-algolia-search" v-show="isComponentPage">
             <algolia-search></algolia-search>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <router-link
               active-class="active"
               :to="`/${ lang }/guide`">{{ langConfig.guide }}
@@ -308,7 +307,7 @@
               :to="`/${ lang }/resource`"
               exact>{{ langConfig.resource }}
             </router-link>
-          </li> -->
+          </li>
 
           <!-- gap -->
           <li class="nav-item" v-show="isComponentPage">
@@ -378,8 +377,8 @@
   // import ThemeConfigurator from './theme-configurator';
   import AlgoliaSearch from './search.vue';
   import compoLang from '../i18n/component.json';
-  //import Var from 'main/index.js';
-  import bus from 'vue';
+  import Var from 'main/index.js';
+  import bus from '../bus';
   import { Dropdown, DropdownItem, DropdownMenu } from 'element-ui';
   import 'element-ui/lib/theme-chalk/index.css';
   import Vue from 'vue';
@@ -387,7 +386,7 @@
   Vue.use(DropdownItem);
   Vue.use(DropdownMenu);
 
-  //const { version } = Var;
+  const { version } = Var;
 
   export default {
     data() {
@@ -455,23 +454,26 @@
 
     created() {
       const xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = _ => {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          const versions = JSON.parse(xhr.responseText);
+      //xhr.onreadystatechange = _ => {
+        //if (xhr.readyState === 4 && xhr.status === 200) {
+          //const versions = JSON.parse(xhr.responseText);
+          const versions = {
+            "1.0.4":"1.0"
+          }
           this.versions = Object.keys(versions).reduce((prev, next) => {
             prev[next] = versions[next];
             return prev;
           }, {});
-        }
-      };
+        //}
+      //};
 
-      if (window.location.origin.indexOf('var') > -1) {
-        xhr.open('GET', '/var/versions.json');
-      } else {
-        xhr.open('GET', '/versions.json');
-      }
+      // if (window.location.origin.indexOf('var') > -1) {
+      //   xhr.open('GET', '/var/versions.json');
+      // } else {
+      //   xhr.open('GET', '/versions.json');
+      // }
 
-      xhr.send();
+      //xhr.send();
       let primaryLast = '#409EFF';
       bus.$on('user-theme-config-update', (val) => {
         let primaryColor = val.global['$--color-primary'];

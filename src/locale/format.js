@@ -1,4 +1,4 @@
-import { hasOwn } from 'vary-ui/src/utils/util';
+import { hasOwn } from 'main/utils/util';
 
 const RE_NARGS = /(%|)\{([0-9a-zA-Z_]+)\}/g;
 /**

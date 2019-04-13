@@ -1,4 +1,4 @@
-<style scoped lang='scss'>
+<style scoped>
   .page-resource {
     padding-top: 55px;
     box-sizing: border-box;
@@ -129,7 +129,7 @@
   <div class="page-container page-resource">
     <h2>Resource</h2>
     <!--<div class="resource-placeholder">-->
-      <!--<img src="@/assets/images/resource-placeholder.svg" alt="">-->
+      <!--<img src="~@/assets/images/resource-placeholder.svg" alt="">-->
       <!--<h4>Under construction</h4>-->
       <!--<p>More resources are being developed</p>-->
     <!--</div>-->
@@ -139,7 +139,7 @@
       <ul class="container">
         <li>
           <div class="card">
-            <img src="@/assets/images/Axure-Components.svg" alt="">
+            <img src="~@/assets/images/Axure-Components.svg" alt="">
             <h3>Axure Components</h3>
             <p>By importing Var UI in Axure, you can easily apply all the components we provide during interaction design.</p>
             <a href="https://gitee.com/VarFE/Resources/raw/master/Var_Components_v2.0.0.rplib">Download</a>
@@ -147,7 +147,7 @@
         </li>
         <li>
           <div class="card">
-            <img src="@/assets/images/Sketch-Template.svg" alt="">
+            <img src="~@/assets/images/Sketch-Template.svg" alt="">
             <h3>Sketch Template</h3>
             <p>Apply components from Var template, so you can improve design efficiency while keeping a unified visual style.</p>
             <a href="https://gitee.com/VarFE/Resources/raw/master/Element%20UI%20Kit_v2.0.sketch">Download</a>
@@ -155,7 +155,7 @@
         </li>
         <!--<li>-->
           <!--<div class="card">-->
-            <!--<img src="@/assets/images/Module.svg" alt="">-->
+            <!--<img src="~@/assets/images/Module.svg" alt="">-->
             <!--<h3>Interaction Design Documentation</h3>-->
             <!--<p>Take a closer look at the interaction design documentation. Learn more details of each component from a microcosmic perspective.</p>-->
             <!--<a href="https://gitee.com/VarFE/Resources/raw/master/Element%20Components%20Documentation.zip">Download</a>-->

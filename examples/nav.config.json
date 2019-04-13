@@ -14,6 +14,14 @@
         {
           "path": "/quickstart",
           "name": "快速上手"
+        },
+        {
+          "path": "/i18n",
+          "name": "国际化"
+        },
+        {
+          "path": "/transition",
+          "name": "内置过渡动画"
         }
       ]
     },
@@ -22,11 +30,53 @@
       "groups": [
         {
           "groupName": "Basic",
-          "list": []
+          "list": [
+            {
+              "path": "/layout",
+              "title": "Layout 布局"
+            },
+            {
+              "path": "/container",
+              "title": "Container 布局容器"
+            },
+            {
+              "path": "/color",
+              "title": "Color 色彩"
+            },
+            {
+              "path": "/typography",
+              "title": "Typography 字体"
+            },
+            {
+              "path": "/icon",
+              "title": "Icon 图标"
+            },
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            }
+          ]
         },
         {
           "groupName": "Notice",
-          "list": []
+          "list": [
+            {
+              "path": "/loading",
+              "title": "Loading 加载"
+            },
+            {
+              "path": "/message",
+              "title": "Message 消息提示"
+            },
+            {
+              "path": "/message-box",
+              "title": "MessageBox 弹框"
+            },
+            {
+              "path": "/notification",
+              "title": "Notification 通知"
+            }
+          ]
         }
       ]
     }
@@ -46,6 +96,14 @@
         {
           "path": "/quickstart",
           "name": "Quick Start"
+        },
+        {
+          "path": "/i18n",
+          "name": "Internationalization"
+        },
+        {
+          "path": "/transition",
+          "name": "Built-in transition"
         }
       ]
     },
@@ -54,11 +112,53 @@
       "groups": [
         {
           "groupName": "Basic",
-          "list": []
+          "list": [
+            {
+              "path": "/layout",
+              "title": "Layout"
+            },
+            {
+              "path": "/container",
+              "title": "Layout Container"
+            },
+            {
+              "path": "/color",
+              "title": "Color"
+            },
+            {
+              "path": "/typography",
+              "title": "Typography"
+            },
+            {
+              "path": "/icon",
+              "title": "Icon"
+            },
+            {
+              "path": "/button",
+              "title": "Button"
+            }
+          ]
         },
         {
           "groupName": "Notice",
-          "list": []
+          "list": [
+            {
+              "path": "/loading",
+              "title": "Loading"
+            },
+            {
+              "path": "/message",
+              "title": "Message"
+            },
+            {
+              "path": "/message-box",
+              "title": "MessageBox"
+            },
+            {
+              "path": "/notification",
+              "title": "Notification"
+            }
+          ]
         }
       ]
     }

@@ -1,4 +1,4 @@
-<style scoped lang='scss'>
+<style scoped>
   .cards {
     margin: 30px 0 70px;
   }
@@ -30,28 +30,28 @@
     <el-row :gutter="14" class="cards">
       <el-col :xs="12" :sm="6">
         <div class="card">
-          <img src="@/assets/images/consistency.png" alt="Consistency">
+          <img src="~@/assets/images/consistency.png" alt="Consistency">
           <h4>Consistency</h4>
           <span></span>
         </div>
       </el-col>
       <el-col :xs="12" :sm="6">
         <div class="card">
-          <img src="@/assets/images/feedback.png" alt="Feedback">
+          <img src="~@/assets/images/feedback.png" alt="Feedback">
           <h4>Feedback</h4>
           <span></span>
         </div>
       </el-col>
       <el-col :xs="12" :sm="6">
         <div class="card">
-          <img src="@/assets/images/efficiency.png" alt="Efficiency">
+          <img src="~@/assets/images/efficiency.png" alt="Efficiency">
           <h4>Efficiency</h4>
           <span></span>
         </div>
       </el-col>
       <el-col :xs="12" :sm="6">
         <div class="card">
-          <img src="@/assets/images/controllability.png" alt="Controllability">
+          <img src="~@/assets/images/controllability.png" alt="Controllability">
           <h4>Controllability</h4>
           <span></span>
         </div>

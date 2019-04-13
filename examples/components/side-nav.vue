@@ -187,7 +187,7 @@
   </div>
 </template>
 <script>
-  import bus from 'vue';
+  import bus from '../bus';
   import compoLang from '../i18n/component.json';
 
   export default {

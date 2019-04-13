@@ -1,4 +1,4 @@
-<style scoped lang='scss'>
+<style scoped>
   h3 {
     margin-bottom: 15px;
   }
@@ -91,13 +91,13 @@
           <p>Fix the navigation at the left edge, thus improves its visibility, making it easier to switch between pages. In this case, the top area of the page holds commonly used tools, e.g. search bar, help button, notice button, etc. Suitable for background management or utility websites.</p>
         </el-col>
         <el-col :span="15" class="nav-demos">
-          <img src="@/assets/images/navbar_1.png" alt="Level 1 categories" @click="enlarge(846, $event)">
+          <img src="~@/assets/images/navbar_1.png" alt="Level 1 categories" @click="enlarge(846, $event)">
           <h5>Level 1 categories</h5>
           <p>Suitable for simply structured sites with only one level of pages. No breadcrumb is needed.</p>
-          <img src="@/assets/images/navbar_2.png" alt="Level 2 categories" @click="enlarge(846, $event)">
+          <img src="~@/assets/images/navbar_2.png" alt="Level 2 categories" @click="enlarge(846, $event)">
           <h5>Level 2 categories</h5>
           <p>Sidebar displays up to two levels of navigation. Breadcrumbs are recommended in combination of second level navigation, making it easier for the users to locate and navigate.</p>
-          <img src="@/assets/images/navbar_3.png" alt="Level 3 categories" @click="enlarge(846, $event)">
+          <img src="~@/assets/images/navbar_3.png" alt="Level 3 categories" @click="enlarge(846, $event)">
           <h5>Level 3 categories</h5>
           <p>Suitable for complicated utility websites. The left sidebar holds first level navigation, and the middle column displays second level navigation or other utility options.</p>
         </el-col>
@@ -110,12 +110,12 @@
           <p>Conforms to the normal browsing order from top to bottom, which makes things more natural. The navigation amount and text length are limited to the width of the top.</p>
         </el-col>
         <el-col :span="14" class="nav-demos">
-          <img src="@/assets/images/navbar_0.png" alt="" @click="enlarge(846, $event)">
+          <img src="~@/assets/images/navbar_0.png" alt="" @click="enlarge(846, $event)">
           <p>Suitable for sites with few navigations and large chunks.</p>
         </el-col>
       </el-row>
     </div>
-    <!--<transition name="fade">
+    <transition name="fade">
       <div class="mask" v-show="showDialog" @click="showDialog = false"></div>
     </transition>
     <transition name="zoom">
@@ -124,7 +124,7 @@
           <img :src="imgUrl" alt="">
         </div>
       </div>
-    </transition>-->
+    </transition>
   </div>
 </template>
 <script>

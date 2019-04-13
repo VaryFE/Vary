@@ -50,13 +50,13 @@
   import AlphaSlider from './alpha-slider';
   import Predefine from './predefine';
   import ColorList from './color-list';
-  import Popper from 'var-ui/src/utils/vue-popper';
-  import Locale from 'var-ui/src/mixins/locale';
-  import { Input } from 'element-ui';
+  import Popper from 'main/utils/vue-popper';
+  import Locale from 'main/mixins/locale';
+  import { Input, Button } from 'element-ui';
   import 'element-ui/lib/theme-chalk/index.css';
-  import ElButton from 'var-ui/packages/button';
   import Vue from 'vue';
   Vue.use(Input);
+  Vue.use(Button);
 
   export default {
     name: 'el-color-picker-dropdown',
@@ -68,7 +68,7 @@
       HueSlider,
       AlphaSlider,
       Input,
-      ElButton,
+      Button,
       Predefine,
       ColorList
     },

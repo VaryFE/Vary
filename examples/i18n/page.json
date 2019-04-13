@@ -19,8 +19,7 @@
       "component": {},
       "changelog": {
         "1": "更新日志",
-        "2": "zh-CN",
-        "3": "https://gitee.com/VarFE/vary"
+        "2": "zh-CN"
       },
       "design": {
         "1": "设计原则",
@@ -86,7 +85,6 @@
         "7": "从 Var Template 快速调用常用组件，在提升设计效率的同时，保证统一的视觉风格",
         "8": "组件交互文档",
         "9": "进一步查看 Var 交互文档，从一个较为微观的角度详细地了解各个组件的交互细节",
-        "10":"https://gitee.com/VarFE",        
         "paraHeight": "1.8",
         "placeholder1": "整理中",
         "placeholder2": "设计资源正在整理和完善中"
@@ -113,8 +111,7 @@
       "component": {},
       "changelog": {
         "1": "Changelog",
-        "2": "en-US",        
-        "3": "https://gitee.com/VarFE/vary"
+        "2": "en-US"
       },
       "design": {
         "1": "Design Disciplines",
@@ -180,7 +177,6 @@
         "7": "Apply components from Var template, so you can improve design efficiency while keeping a unified visual style.",
         "8": "Interaction Design Documentation",
         "9": "Take a closer look at the interaction design documentation. Learn more details of each component from a microcosmic perspective.",
-        "10":"https://gitee.com/VarFE",
         "paraHeight": "1.6",
         "placeholder1": "Under construction",
         "placeholder2": "More resources are being developed"

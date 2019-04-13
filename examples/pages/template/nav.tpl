@@ -91,13 +91,13 @@
           <p><%= 6 ></p>
         </el-col>
         <el-col :span="15" class="nav-demos">
-          <img src="@/assets/images/navbar_1.png" alt="<%= 7 >" @click="enlarge(846, $event)">
+          <img src="~@/assets/images/navbar_1.png" alt="<%= 7 >" @click="enlarge(846, $event)">
           <h5><%= 7 ></h5>
           <p><%= 8 ></p>
-          <img src="@/assets/images/navbar_2.png" alt="<%= 9 >" @click="enlarge(846, $event)">
+          <img src="~@/assets/images/navbar_2.png" alt="<%= 9 >" @click="enlarge(846, $event)">
           <h5><%= 9 ></h5>
           <p><%= 10 ></p>
-          <img src="@/assets/images/navbar_3.png" alt="<%= 11 >" @click="enlarge(846, $event)">
+          <img src="~@/assets/images/navbar_3.png" alt="<%= 11 >" @click="enlarge(846, $event)">
           <h5><%= 11 ></h5>
           <p><%= 12 ></p>
         </el-col>
@@ -110,12 +110,12 @@
           <p><%= 14 ></p>
         </el-col>
         <el-col :span="14" class="nav-demos">
-          <img src="@/assets/images/navbar_0.png" alt="" @click="enlarge(846, $event)">
+          <img src="~@/assets/images/navbar_0.png" alt="" @click="enlarge(846, $event)">
           <p><%= 15 ></p>
         </el-col>
       </el-row>
     </div>
-    <!--<transition name="fade">
+    <transition name="fade">
       <div class="mask" v-show="showDialog" @click="showDialog = false"></div>
     </transition>
     <transition name="zoom">
@@ -124,7 +124,7 @@
           <img :src="imgUrl" alt="">
         </div>
       </div>
-    </transition>-->
+    </transition>
   </div>
 </template>
 <script>

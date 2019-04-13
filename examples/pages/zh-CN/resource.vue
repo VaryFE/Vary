@@ -129,7 +129,7 @@
   <div class="page-container page-resource">
     <h2>资源</h2>
     <!--<div class="resource-placeholder">-->
-      <!--<img src="@/assets/images/resource-placeholder.svg" alt="">-->
+      <!--<img src="~@/assets/images/resource-placeholder.svg" alt="">-->
       <!--<h4>整理中</h4>-->
       <!--<p>设计资源正在整理和完善中</p>-->
     <!--</div>-->
@@ -139,7 +139,7 @@
       <ul class="container">
         <li>
           <div class="card">
-            <img src="@/assets/images/Axure-Components.svg" alt="">
+            <img src="~@/assets/images/Axure-Components.svg" alt="">
             <h3>Axure Components</h3>
             <p>通过在 Axure 中导入 Var 组件库，可以在交互设计阶段方便地调用常用的组件</p>
             <a href="https://gitee.com/VarFE/Resources/raw/master/Var_Components_v2.0.0.rplib">下载</a>
@@ -147,7 +147,7 @@
         </li>
         <li>
           <div class="card">
-            <img src="@/assets/images/Sketch-Template.svg" alt="">
+            <img src="~@/assets/images/Sketch-Template.svg" alt="">
             <h3>Sketch Template</h3>
             <p>从 Var Template 快速调用常用组件，在提升设计效率的同时，保证统一的视觉风格</p>
             <a href="https://gitee.com/VarFE/Resources/raw/master/Element%20UI%20Kit_v2.0.sketch">下载</a>
@@ -155,7 +155,7 @@
         </li>
         <!--<li>-->
           <!--<div class="card">-->
-            <!--<img src="@/assets/images/Module.svg" alt="">-->
+            <!--<img src="~@/assets/images/Module.svg" alt="">-->
             <!--<h3>组件交互文档</h3>-->
             <!--<p>进一步查看 Var 交互文档，从一个较为微观的角度详细地了解各个组件的交互细节</p>-->
             <!--<a href="https://gitee.com/VarFE/Resources/raw/master/Element%20Components%20Documentation.zip">下载</a>-->

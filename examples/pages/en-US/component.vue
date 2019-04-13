@@ -1,4 +1,4 @@
-<style lang='scss'>
+<style>
   .page-component__scroll {
     height: calc(100% - 80px);
     margin-top: 80px;
@@ -205,7 +205,7 @@
       <router-view class="content"></router-view>
       <footer-nav></footer-nav>
     </div>
-    <!--<transition name="back-top-fade">
+    <transition name="back-top-fade">
       <div
         class="page-component-up"
         :class="{ 'hover': hover }"
@@ -215,7 +215,7 @@
         @click="toTop">
         <i class="el-icon-caret-top"></i>
       </div>
-    </transition>-->
+    </transition>
   </div>
   </el-scrollbar>
 </template>
