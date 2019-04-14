@@ -34,6 +34,12 @@
     "examples/**/*.ts",
     "examples/**/*.tsx",
     "examples/**/*.vue",
+    // "src/**/*.ts",
+    // "src/**/*.tsx",
+    // "src/**/*.vue",
+    // "packages/**/*.ts",
+    // "packages/**/*.tsx",
+    // "packages/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx", "examples/router.config.js"
   ],

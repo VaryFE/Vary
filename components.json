@@ -1,4 +1,3 @@
 {
-  "icon": "./packages/icon/index.js",
-  "scrollbar": "./packages/scrollbar/index.js"
+  "icon": "./packages/icon/index.js"
 }

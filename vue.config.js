@@ -26,17 +26,17 @@ module.exports = {
       .set("main", path.resolve("src"));
 
     // 把 packages 和 examples 加入编译，因为新增的文件默认是不被 webpack 处理的
-    config.module
-      .rule("ts")
-      .include.add(/packages/)
-      .end()
-      .include.add(/examples/)
-      .end()
-      .use("babel")
-      .loader("babel-loader")
-      .tap(options => {
-        return options;
-      });
+    // config.module
+    //   .rule("ts")
+    //   .include.add(/packages/)
+    //   .end()
+    //   .include.add(/examples/)
+    //   .end()
+    //   .use("babel")
+    //   .loader("babel-loader")
+    //   .tap(options => {
+    //     return options;
+    //   });
 
     config.module
       .rule("js")
