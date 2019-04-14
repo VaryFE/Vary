@@ -63,8 +63,9 @@ function genInlineComponentText(template, script) {
     ${demoComponentContent}
     ${script}
     return {
-      ...democomponentExport,
-      render,
+      //...democomponentExport,
+      render: h => h(democomponentExport),
+      //render,
       staticRenderFns
     }
   })()`;

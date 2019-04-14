@@ -47,6 +47,7 @@ router.afterEach(route => {
 });
 
 new Vue({ // eslint-disable-line
-  ...entry,
-  router
+  //...entry,
+  router,
+  render: h => h(entry)
 }).$mount('#app');
